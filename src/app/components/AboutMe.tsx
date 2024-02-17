@@ -3,14 +3,14 @@ import React, {useTransition, useState} from 'react'
 import Image from "next/image";
 
 export default function AboutMe() {
-    const [tab, setTab] = useState('Skills')
-    const [isPending, startTransition] = useTransition();
+    // const [tab, setTab] = useState('Skills')
+    // const [isPending, startTransition] = useTransition();
 
-    const handleTabChange = (id: string) => {
-        startTransition(() =>  {
-            setTab(id);
-        })
-    }
+    // const handleTabChange = (id: string) => {
+    //     startTransition(() =>  {
+    //         setTab(id);
+    //     })
+    // }
 
   return (
     <section className="text-[#fff]">
@@ -23,7 +23,7 @@ export default function AboutMe() {
                 className="rounded-md"
             />
             <div>
-                <h1 className=" font-semibold text-3xl md:text-5xl text-[#fff] mb-6">About me</h1>
+                <h1 className="font-semibold text-3xl md:text-5xl text-[#fff] mb-6">About me</h1>
                 <p className="text-base lg:text-lg">
                 Welcome to my digital hub! I'm a versatile developer proficient in a diverse range of technologies, including JavaScript, Node.js, and TypeScript. With a keen eye for design, I specialize in crafting captivating user interfaces using HTML and CSS, ensuring a seamless user experience across platforms. Leveraging Git for version control, I maintain clean and organized codebases, fostering collaboration and efficiency in development workflows. My expertise extends to Redux for state management, empowering applications with robust data handling capabilities. As a Firebase expert, I excel in building real-time applications that harness the power of the cloud. Additionally, I utilize Express for backend development and MongoDB for efficient database management. Beyond coding, I'm an enthusiastic content creator on YouTube, where I share my insights and experiences in the ever-evolving tech landscape. Let's join forces and transform your ideas into impactful digital solutions!
 
