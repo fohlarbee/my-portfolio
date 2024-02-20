@@ -9,17 +9,17 @@ export default function HeaderSection() {
             <div className="col-span-7 place-self-center text-center sm:text-left">
                 <h1 
                 className="text-white lg:text-6xl text-4xl font-extrabold mb-4">
-                  Hi,  <span></span>
+                   <span></span>
                   <TypeAnimation
                     sequence={[
                       // Same substring at the start will only be typed out once, initially
-                      "I'm Fohlarbee",
+                      "Hi I'm Fohlarbee",
                       1000, // wait 1s before replacing "Mice" with "Hamsters"
-                      'Mobile app developer',
+                      'A Mobile app developer',
                       1000,
                       'Web developer',
                       1000,
-                      'Youtuber',
+                      'And a Youtuber',
                       1000
                     ]}
                     wrapper="span"
