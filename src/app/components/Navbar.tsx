@@ -35,7 +35,7 @@ export default function Navbar() {
   return (
     <nav className='sticky  top-0 right-0 left-0 z-10 bg-[#181818] bg-opacity-90'>
         <div className='flex flex-wrap items-center justify-between mx-auto px-8 my-3'>
-            <Link href='/' className='text-white text-2xl lg:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-300 py-3 pl-3 md:p-0 hover:text-[#fff]'>Dev.Fohlarbee</Link>
+            <Link href='/' className='text-2xl lg:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-300 py-3 pl-3 md:p-0 hover:text-[#fff]'>Dev.Fohlarbee</Link>
             <div className="block md:hidden mobile-menu">
               {isNavOpen ?(
                 <button onClick={() => setIsNavOpen(false)} className='flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-[#fff] hover:border-[#fff]'><XMarkIcon className='h-5 w-5' /></button>
@@ -43,7 +43,7 @@ export default function Navbar() {
 
                 : 
                   (
-                    <button onClick={() => setIsNavOpen(true)} className='flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-[#fff] hover:border-[#fff]'><Bars3Icon className='h-5 w-5' /></button>
+                    <button onClick={() => setIsNavOpen(true)} className='flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200'><Bars3Icon className='h-5 w-5' /></button>
                 )
               }
             </div>
