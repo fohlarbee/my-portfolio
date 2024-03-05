@@ -2,6 +2,7 @@
 import Image from "next/image"
 import { TypeAnimation } from "react-type-animation"
 
+
 export default function HeaderSection() {
   return (
     <section>

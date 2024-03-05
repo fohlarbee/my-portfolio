@@ -5,7 +5,7 @@
 // }
 
 export default function TabButton({active, selectTab, children} : any) {
-  const buttonClass = active ? 
+  const buttonClass = active ?  
   'text-[#fff] border-b border-green-400' 
   :  'text-[#ADB7DE]'
 
