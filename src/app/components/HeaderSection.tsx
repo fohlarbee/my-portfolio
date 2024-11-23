@@ -9,18 +9,18 @@ export default function HeaderSection() {
         <div className="grid grid-cols-1 sm:grid-cols-12">
             <div className="col-span-7 place-self-center text-center sm:text-left">
                 <h1 
-                className="text-white lg:text-6xl text-4xl font-extrabold mb-4">
+                className="text-white lg:text-6xl text-4xl font-extra-bold mb-4">
                    <span></span>
                   <TypeAnimation
                     sequence={[
                       // Same substring at the start will only be typed out once, initially
                       "Hi I'm Fohlarbee",
                       1000, // wait 1s before replacing "Mice" with "Hamsters"
-                      'A Mobile app developer',
+                      'An algorithm enthusiast',
                       1000,
-                      'Web developer',
+                      'An activist',
                       1000,
-                      'And a Youtuber',
+                      'And a lonly soul',
                       1000
                     ]}
                     wrapper="span"
@@ -28,15 +28,23 @@ export default function HeaderSection() {
                     repeat={Infinity}
                   />
                   </h1>
-                <p className=" text-[#eeeeee] text-lg lg:text-xl">A fullstack mobile dev with three(3) and counting years of experience </p>
+                <p className=" text-[#adb7be] text-lg lg:text-xl">A backend developer, database designer, and algorithm enthusiast with over 3 years of experience. </p>
                 <div className="my-5">
-                  <button className="px-6 py-4 rounded-full mr-4 bg-green-100 hover:bg-slate-200 text-black mb-4 border border-solid border-white-500">Hire me</button>
-                  <button className="px-6 py-4 rounded-full bg-transparent text-[#000] border hover:bg-slate-700 bg-gradient-to-br from-blue-400 to-green-300">Download cv</button>
+                  <a href="https://calendly.com/d/cqt3-gmd-fqy/one-off-meeting-hire-me"
+                  target="_blank" rel="noopener noreferrer"
+                  >
+                    <button className="px-6 py-4 rounded-full mr-4 bg-green-100 hover:bg-slate-200 text-black mb-4 border border-solid border-white-500  w-full sm:w-fit">Hire me</button>
+                  </a>
+                  <a href="/resume.docx" download='my-resume.docx'>
+                  <button
+                   className="px-6 py-4 rounded-full bg-transparent text-[#fff] font-extrabold hover:bg-slate-300 bg-gradient-to-br from-green-700 to-green-70  w-full sm:w-fit">Download cv</button>
+                  </a>
+                 
                 </div>
             </div>
             
-            <div className="col-span-5 place-self-center mt-6 lg:mt-0">
-                <div className="rounded-full bg-[#181818] w-[350px] h-[350px] lg:w-[500px] lg:h-[500px] relative">
+            <div className="col-span-5 place-self-center mt-6 lg:mt-0 mb-5">
+                <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
                     <Image 
                       src="/images/icon.png"
                       alt="logo"

@@ -8,8 +8,8 @@ type NavType = {
 
   const navLinks: NavType[] = [
     { title: 'about', path: '/about' },
-    { title: 'project', path: '/projects' },
-    { title: 'contact', path: '/contactme' },
+    { title: 'projects', path: '/projects' },
+    { title: 'contact me', path: '/contactme' },
   ];
 
 export default function MenueOverlay() {
