@@ -11,9 +11,9 @@ export default function TabButton({active, selectTab, children} : any) {
 
   return (
     <button onClick={selectTab}>
-      <p className={`mr-4 font-semibold md:text-2xl ${buttonClass}`}>
+      <p className={`mr-4 font-semibold md:text-2xl hover:bg-clip-text hover:text-green-100 ${buttonClass}`}>
       {children}
-      </p>
+      </p> 
     </button>
   )
 }

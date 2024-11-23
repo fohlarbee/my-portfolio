@@ -28,7 +28,7 @@ export default function ProjectSection() {
             <ProjectCard key={project.id} title={project.title} desc={project.desc} imagUrl={project.image} gitUrl={project.gitUrl} previewUrl={project.previewUrl} />
 
         ))}
-        </div>
+        </div> 
         
     </div>
   )
