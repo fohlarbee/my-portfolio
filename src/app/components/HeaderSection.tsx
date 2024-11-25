@@ -1,15 +1,21 @@
 "use client"
 import Image from "next/image"
-import { TypeAnimation } from "react-type-animation"
+import Link from "next/link"
+import { TypeAnimation } from "react-type-animation";
+import {motion} from "framer-motion";
 
 
 export default function HeaderSection() {
   return (
-    <section>
+    <section className="lg:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-12">
-            <div className="col-span-7 place-self-center text-center sm:text-left">
+            <motion.div 
+              initial={{opacity:0, scale:0}} 
+              animate={{opacity:1, scale:1}} 
+              transition={{duration:0.5}} 
+              className="col-span-8 place-self-center text-center sm:text-left justify-self-start">
                 <h1 
-                className="text-white lg:text-6xl text-4xl font-extra-bold mb-4">
+                className="text-white lg:text-6xl text-4xl font-extrabold mb-4 lg:leading-normal">
                    <span></span>
                   <TypeAnimation
                     sequence={[
@@ -30,20 +36,24 @@ export default function HeaderSection() {
                   </h1>
                 <p className=" text-[#adb7be] text-lg lg:text-xl">A backend developer, database designer, and algorithm enthusiast with over 3 years of experience. </p>
                 <div className="my-5">
-                  <a href="https://calendly.com/d/cqt3-gmd-fqy/one-off-meeting-hire-me"
+                  <Link href="https://calendly.com/d/cqt3-gmd-fqy/one-off-meeting-hire-me"
                   target="_blank" rel="noopener noreferrer"
                   >
                     <button className="px-6 py-4 rounded-full mr-4 bg-green-100 hover:bg-slate-200 text-black mb-4 border border-solid border-white-500  w-full sm:w-fit">Hire me</button>
-                  </a>
-                  <a href="/resume.docx" download='my-resume.docx'>
+                  </Link>
+                  <Link href="/resume.docx" download='my-resume.docx'>
                   <button
                    className="px-6 py-4 rounded-full bg-transparent text-[#fff] font-extrabold hover:bg-slate-300 bg-gradient-to-br from-green-700 to-green-70  w-full sm:w-fit">Download cv</button>
-                  </a>
+                  </Link>
                  
                 </div>
-            </div>
+            </motion.div>
             
-            <div className="col-span-5 place-self-center mt-6 lg:mt-0 mb-5">
+            <motion.div 
+             initial={{opacity:0, scale:0}} 
+             animate={{opacity:1, scale:1}} 
+             transition={{duration:0.5}}  
+            className="col-span-4 place-self-center mt-6 lg:mt-0 mb-5">
                 <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
                     <Image 
                       src="/images/icon.png"
@@ -55,7 +65,7 @@ export default function HeaderSection() {
 
                 </div>
                 
-            </div>
+            </motion.div>
         </div>
     </section>
   )
