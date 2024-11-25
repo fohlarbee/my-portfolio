@@ -52,13 +52,14 @@ export const EmailSection = () => {
                     I am always open to new opportunities, collaborations, and projects. Feel free to reach out to me via email or any of my social media handles.
                 </p>
                 <div className="socials flex flex-row gap-3">
-                   <Link href="https://github.com/fohlarbee">
-                          <Image src={GithubLogo} alt="Github Logo" />
+                   <Link href="https://github.com/fohlarbee" className="bg-[#fff] rounded-lg ">
+                          <Image src={GithubLogo} alt="Github Logo" 
+                          />
                    </Link> 
-                     <Link href="https://linkedin.com/in/fohlarbee">
+                     <Link href="https://www.linkedin.com/in/samuel-olanrewaju-abimbola-037212255">
                               <Image src={LinkedInLogo} alt="LinkedIn Logo" />
                     </Link>
-                    <Link href="https://twitter.com/fohlarbee">
+                    <Link href="https://x.com/fohlarbee"  className="bg-[#fff] rounded-lg" >
                               <Image src={TwitterLogo} alt="Twitter Logo" />
                     </Link>
                 </div>
