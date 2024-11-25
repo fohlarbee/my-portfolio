@@ -20,25 +20,28 @@ const achievementList = [
     {
         metric:"Awards",
         value:"6",
+        prefix:"~"
     },
     {
         metric:"Experience",
         value:"3",
+        postfix:"Yrs",
     },
 ]
 const AchievmentSection = () => {
   return (
     <div className='py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
-        <div className='border-[#33353f] border rounded-md py-8 px-17 flex flex-row items-center justify-between'>
+        <div className='border-[#33353f] border rounded-md py-8 px-1 flex flex-row items-center justify-between'>
             {achievementList.map((achievement, i) => (
-                <div key={i} className="flex flex-col items-center justify-center mx-4">
-                    <h2 className="text-4xl font-bold text-[#fff] flex flex-row">
+                <div key={i} className="flex flex-col items-center justify-center mx-4 overflow-hidden">
+                    <h2 
+                    className="md:text-4xl text-lg font-bold flex flex-row text-green-500">
                         {achievement.prefix}
                        <AnimatedNumbers
                         includeComma
                         locale='en-NG'
                         animateToNumber={parseInt(achievement.value)}
-                        className='text-4xl font-bold text-[#fff]'
+                        className='font-bold'
                         transitions={(index) => ({
                             type: "spring",
                             duration: 140 * (index + 0.3),
@@ -50,7 +53,7 @@ const AchievmentSection = () => {
                          {achievement.postfix}
 
                     </h2>
-                    <p className="text-[#ADB7BE] text-lg">{achievement.metric}</p>
+                    <p className="text-[#ADB7BE] text-xs sm:text-2xl ">{achievement.metric}</p>
                 </div>
 
             ))}

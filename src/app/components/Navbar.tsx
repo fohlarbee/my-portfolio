@@ -36,7 +36,7 @@ export default function Navbar() {
     <nav className='sticky top-0 right-0 left-0 z-10 bg-[#181818] bg-opacity-90 border-b border-[#33353f]'>
         <div className='flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-8 my-3'>
             <Link href='/' className='text-2xl lg:text-5xl 
-            font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-300 py-3 md:p-0 hover:text-[#fff]'>
+            font-semibold text-transparent bg-clip-text bg-gradient-to-r from-green-700 to-green-400 py-3 md:p-0 hover:text-[#fff]'>
             Dev.Fohlarbee</Link> 
             <div className="block md:hidden mobile-menu">
               {isNavOpen ?(
