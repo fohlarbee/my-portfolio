@@ -15,7 +15,7 @@ export default function AboutMe() {
     }
 
   return (
-    <section className="text-[#fff]">
+    <section className="text-[#fff]" id='about'>
         <div className="md:grid md:grid-cols-2 gap-8 items-center px-8 py-4 xl:gap-16 sm:py-16 xl:px-16">
             <Image
                 src='/images/coding.jpg'

@@ -19,15 +19,15 @@ export default function Navbar() {
    const navLinks: NavType[] = [
     {
       title:'about',
-      path:'/about'
+      path:'#about'
     },
     {
       title:'projects',
-      path:'/projects'
+      path:'#projects'
     },
     {
       title:'contact me',
-      path:'/contactme'
+      path:'#contactme'
     },
 
   ]

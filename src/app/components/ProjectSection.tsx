@@ -25,7 +25,7 @@ export default function ProjectSection() {
     transition:{duration:0.5}
   }
   return (
-    <section>
+    <section id="projects">
         <h2 
         className="font-semibold text-2xl text-center text-transparent bg-gradient-to-r bg-clip-text from-blue-300 to-green-400 my-5">
           My Projects
