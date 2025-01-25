@@ -41,7 +41,7 @@ export default function HeaderSection() {
                   >
                     <button className="px-6 py-4 rounded-full mr-4 bg-green-100 hover:bg-slate-200 text-black mb-4 border border-solid border-white-500  w-full sm:w-fit">Hire me</button>
                   </Link>
-                  <Link href="/resume.docx" download='my-resume.docx'>
+                  <Link href="/resume.pdf" download='my-resume.pdf'>
                   <button
                    className="px-6 py-4 rounded-full bg-transparent text-[#fff] font-extrabold hover:bg-slate-300 bg-gradient-to-br from-green-700 to-green-70  w-full sm:w-fit">Download cv</button>
                   </Link>
