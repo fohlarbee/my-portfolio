@@ -22,11 +22,11 @@ export default function HeaderSection() {
                       // Same substring at the start will only be typed out once, initially
                       "Hi I'm Fohlarbee",
                       1000, // wait 1s before replacing "Mice" with "Hamsters"
+                      'A fullstack AI developer based in Nigeria!',
+                      1000,
                       'An algorithm enthusiast',
                       1000,
-                      'An activist',
-                      1000,
-                      'And a lonly soul',
+                      'And a database designer',
                       1000
                     ]}
                     wrapper="span"
@@ -34,9 +34,9 @@ export default function HeaderSection() {
                     repeat={Infinity}
                   />
                   </h1>
-                <p className=" text-[#adb7be] text-lg lg:text-xl">A backend developer, database designer, and algorithm enthusiast with over 3 years of experience. </p>
+                <p className=" text-[#adb7be] text-lg lg:text-xl">Fullstack dev, DB wizard, and algorithm junkie — crafting clean systems with 3+ years in the trenches.</p>
                 <div className="my-5">
-                  <Link href="https://calendly.com/d/cqt3-gmd-fqy/one-off-meeting-hire-me"
+                  <Link href="https://calendly.com/d/cq8f-cyt-vf9/30-minute-meeting"
                   target="_blank" rel="noopener noreferrer"
                   >
                     <button className="px-6 py-4 rounded-full mr-4 bg-green-100 hover:bg-slate-200 text-black mb-4 border border-solid border-white-500  w-full sm:w-fit">Hire me</button>

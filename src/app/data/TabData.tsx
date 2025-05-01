@@ -6,20 +6,19 @@ export const TabData = [
     id: 'skills',
     content: (
         <ul className="list-disc pl-2">
-            <li>SQL</li>
-            <li>Postgres & SQLlite</li>
-            <li>React</li>
-            <li>NodeJs</li>
-            <li>Express</li>
-            <li>MernStack</li>
-            <li>Next.js</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>Golang</li>
-            <li>Cyber Threat analyst</li>
-            <li>Digital marketer</li>
+        <li>JavaScript / TypeScript</li>
+        <li>React / Next.js</li>
+        <li>Node.js / Express / NestJS / ElysiaJS</li>
+        <li>HTML / CSS</li>
+        <li>SQL / PostgreSQL / SQLite / MongoDB</li>
+        <li>Golang</li>
+        <li>MERN Stack</li>
+        <li>Firebase / Redux / Git</li>
+        <li>Generative AI / Machine Learning</li>
+        <li>Prompt Engineering / AI App Dev</li>
+        <li>Cybersecurity (Threat Analysis)</li>
+        <li>Digital Marketing</li>
+        <li>Content Creation (YouTube)</li>
             
 
         </ul>
