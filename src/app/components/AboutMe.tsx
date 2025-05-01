@@ -26,7 +26,16 @@ export default function AboutMe() {
             />
             <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
                 <h2 className="font-semibold text-3xl md:text-5xl text-[#fff] my-4">About me</h2>
-                <p className="text-base lg:text-lg"> Welcome to my digital hub! I&#39;m a versatile developer proficient in a diverse range of technologies, including JavaScript, Node.js, and TypeScript. With a keen eye for design, I specialize in crafting captivating user interfaces using HTML and CSS, ensuring a seamless user experience across platforms. Leveraging Git for version control, I maintain clean and organized codebases, fostering collaboration and efficiency in development workflows. My expertise extends to Redux for state management, empowering applications with robust data handling capabilities. As a Firebase expert, I excel in building real-time applications that harness the power of the cloud. Additionally, I utilize Express for backend development and MongoDB for efficient database management. Beyond coding, I&#39;m an enthusiastic content creator on YouTube, where I share my insights and experiences in the ever-evolving tech landscape. Let&#39;s join forces and transform your ideas into impactful digital solutions!</p>
+                <p className="text-base lg:text-lg">Welcome to my digital hub.
+                    I’m a future-ready fullstack developer blending code with intelligence — literally. I specialize in building scalable, high-performance systems using NestJS, Next.js, and ElysiaJS, backed by clean database design and solid backend architecture. My workflow thrives on TypeScript, Node.js, and JavaScript, with smooth UIs crafted in HTML, CSS, and modern frontend frameworks.
+
+                    But I don’t stop at code — I integrate Generative AI and Machine Learning into products that think, adapt, and deliver real value. From automating workflows to enhancing user experiences, I use AI as a core building block, not an afterthought.
+
+                    With Git for version control, Redux for state management, and Firebase for real-time, cloud-powered apps, I keep codebases clean and teams synced. Whether it’s MongoDB, PostgreSQL, Microsoft Azure or scalable APIs via Express, I bring clarity to complexity.
+
+                    Beyond building, I share. As a content creator on YouTube, I break down tech concepts, share dev journeys, and explore the latest in AI, software engineering, and beyond.
+
+                    Let’s team up and turn next-gen ideas into actual impact.</p>
                 <div className="flex flex-row mt-5">
                     <TabButton selectTab={() => handleTabChange('skills')} active={tab === 'skills'}>Skills</TabButton>
                     <TabButton selectTab={() => handleTabChange('certifications')} active={tab === 'certifications'}>Certifications</TabButton>

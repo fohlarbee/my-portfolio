@@ -5,9 +5,9 @@ import TwitterLogo from "../../../public/twitter.svg";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 export const EmailSection = () => { 
-    const [emailSubmitted, setEmailSubmitted] = useState(false);
     const [loading, setLoading] = useState(false);
 
     const handleSubmit  = async(e: any) => {
@@ -31,10 +31,11 @@ export const EmailSection = () => {
             e.target.reset();
             setLoading(false);
             const responseData = await response.json();
-            setEmailSubmitted(true);
+            toast.success("Email sent successfully")
             return responseData; 
         }else{
             setLoading(false);
+            toast.error("Error sending email, please try again.");
             console.error("Error", response.status, await response.json());
         }
     }
@@ -59,7 +60,7 @@ export const EmailSection = () => {
                      <Link href="https://www.linkedin.com/in/samuel-olanrewaju-abimbola-037212255">
                               <Image src={LinkedInLogo} alt="LinkedIn Logo" />
                     </Link>
-                    <Link href="https://x.com/fohlarbee"  className="bg-[#fff] rounded-lg" >
+                    <Link href="https://x.com/fohlarbeefb"  className="bg-[#fff] rounded-lg" >
                               <Image src={TwitterLogo} alt="Twitter Logo" />
                     </Link>
                 </div>
@@ -117,13 +118,6 @@ export const EmailSection = () => {
                    >
                             {loading ? "Sending..." : "Send Message"}
                    </button>
-                   {emailSubmitted && 
-                   (  <p className="text-green-500 text-sm mt-4">
-                    Email submitted successfully
-                    </p>
-                )
-                 
-                   }
                 
                 </form>
             </div>
